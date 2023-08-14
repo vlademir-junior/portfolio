@@ -1,5 +1,5 @@
 .footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   background-color: #333;
@@ -7,7 +7,21 @@
   padding: 10px 0;
   text-align: center;
   font-family: 'DotGothic16', sans-serif;
+  z-index: 1; /* Certifique-se de que o footer está acima dos outros conteúdos */
 }
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../assets/RXi9.gif') no-repeat center center/cover;
+  opacity: 0.4; /* Ajuste a opacidade conforme necessário */
+  z-index: -1; /* Coloque o pseudo-elemento atrás do conteúdo do footer */
+}
+
 
 .container {
   max-width: 1000px;

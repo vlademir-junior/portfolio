@@ -19,3 +19,11 @@ body {
   color: #555; /* Text color */
   overflow-x: hidden; /* Hide horizontal scrollbar if content overflows */
 }
+
+.about-container,
+.contact-container,
+.projects,
+.technologies {
+  z-index: auto; /* Defina "auto" para o z-index ou remova completamente */
+}
+

@@ -1,0 +1,34 @@
+.header {
+  position: relative;
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 44px;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px; /* Added margin bottom */
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../assets/RXi9.gif') no-repeat center center/cover;
+  opacity: 0.3; /* Adjust opacity as needed */
+  z-index: -1;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: #ff3c3c;
+}
+
+.header h2 {
+  margin: 10px 0;
+  color: #f0f853;
+  font-size: 2rem;
+}

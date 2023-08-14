@@ -1,0 +1,21 @@
+/* Import fonts and icon styles */
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+/* Reset default styling for all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the entire body */
+body {
+  /* Create a semi-transparent overlay on the background image */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./assets/bckgrnd-code.webp);
+  background-size: cover; /* Scale background image to cover the entire area */
+  background-position: center; /* Position background image in the center */
+  font-family: 'Poppins', sans-serif; /* Set the font for the body text */
+  color: #555; /* Text color */
+  overflow-x: hidden; /* Hide horizontal scrollbar if content overflows */
+}

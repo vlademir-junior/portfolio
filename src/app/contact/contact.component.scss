@@ -1,33 +1,107 @@
 .contact-container {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 850px;
+  margin: 20px auto 40px;
   padding: 40px;
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  height: 90vh;
-  overflow: auto;
-}
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 
-.contact-container h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
+  h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: #0284c7;
+      border-radius: 2px;
+    }
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #334155;
+    margin-bottom: 24px;
+  }
 }
 
 .contact-info {
   list-style: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+
+  li {
+    background: #f8fafc;
+    padding: 16px 20px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    color: #334155;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border-color: #cbd5e1;
+    }
+
+    i {
+      font-size: 1.25rem;
+      color: #0284c7;
+      width: 24px;
+      text-align: center;
+    }
+
+    strong {
+      color: #0f172a;
+      font-weight: 600;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0284c7;
+      font-weight: 500;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: #0369a1;
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
-.contact-info li {
-  margin-bottom: 12px;
-}
+@media (max-width: 768px) {
+  .contact-container {
+    margin: 15px;
+    padding: 24px;
 
-.contact-info strong {
-  font-weight: bold;
-}
+    h2 {
+      font-size: 1.75rem;
+    }
 
-.contact-info a {
-  text-decoration: none;
-  color: #007bff;
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
 }

@@ -58,7 +58,6 @@ export const Navbar: React.FC = () => {
             </NavLink>
           ))}
 
-          {/* Seletor de Idioma com Bandeiras */}
           <div className={styles.languageSelector}>
             <select
               value={i18n.language}

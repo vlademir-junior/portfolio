@@ -1,12 +1,15 @@
 import React from 'react';
 import styles from './Contact.module.scss';
+import { useTranslation } from 'react-i18next';
 
 export const Contact: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.contactContainer}>
       <div className={styles.header}>
-        <h2>Get in Touch</h2>
-        <p>Feel free to reach out for opportunities, collaborations, or questions.</p>
+        <h2>{t('contactPage.title')}</h2>
+        <p>{t('contactPage.description')}</p>
       </div>
 
       <div className={styles.grid}>
@@ -15,7 +18,7 @@ export const Contact: React.FC = () => {
             <i className="fas fa-envelope"></i>
           </div>
           <div className={styles.info}>
-            <span className={styles.label}>Email</span>
+            <span className={styles.label}>{t('contactPage.emailLabel')}</span>
             <span className={styles.value}>vlademir.junior.nh@gmail.com</span>
           </div>
         </a>
@@ -25,7 +28,7 @@ export const Contact: React.FC = () => {
             <i className="fas fa-phone"></i>
           </div>
           <div className={styles.info}>
-            <span className={styles.label}>Phone</span>
+            <span className={styles.label}>{t('contactPage.phoneLabel')}</span>
             <span className={styles.value}>+55 51 9-9009-1531</span>
           </div>
         </a>

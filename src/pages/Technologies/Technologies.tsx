@@ -1,73 +1,76 @@
 import React from 'react';
 import styles from './Technologies.module.scss';
+import { useTranslation } from 'react-i18next';
 
 interface TechItem {
   name: string;
   iconClass: string;
-  description: string;
+  descriptionKey: string;
 }
 
 const technologiesList: TechItem[] = [
   {
     name: 'HTML5',
     iconClass: 'fab fa-html5',
-    description: 'Markup language for structuring and presenting content on the web.',
+    descriptionKey: 'technologiesPage.items.html',
   },
   {
     name: 'CSS3',
     iconClass: 'fab fa-css3-alt',
-    description: 'Stylesheet language for designing the presentation of web pages.',
+    descriptionKey: 'technologiesPage.items.css',
   },
   {
     name: 'JavaScript',
     iconClass: 'fab fa-js-square',
-    description: 'Programming language for adding interactivity to web pages.',
+    descriptionKey: 'technologiesPage.items.javascript',
   },
   {
     name: 'Python',
     iconClass: 'fab fa-python',
-    description: 'High-level programming language known for readable code and backend backend development.',
+    descriptionKey: 'technologiesPage.items.python',
   },
   {
     name: 'Git',
     iconClass: 'fab fa-git-alt',
-    description: 'Distributed version control system for tracking changes in code.',
+    descriptionKey: 'technologiesPage.items.git',
   },
   {
-    name: 'C Language',
+    name: 'C',
     iconClass: 'fas fa-code',
-    description: 'General-purpose programming language known for efficiency and system-level access.',
+    descriptionKey: 'technologiesPage.items.c',
   },
   {
     name: 'Docker',
     iconClass: 'fab fa-docker',
-    description: 'Containerization platform to build, share, and run applications efficiently.',
+    descriptionKey: 'technologiesPage.items.docker',
   },
   {
     name: 'Linux',
     iconClass: 'fab fa-linux',
-    description: 'Open-source Unix-like operating system widely used for servers and development.',
+    descriptionKey: 'technologiesPage.items.linux',
   },
   {
     name: 'React',
     iconClass: 'fab fa-react',
-    description: 'JavaScript library for building user interfaces.',
+    descriptionKey: 'technologiesPage.items.react',
   },
 ];
 
 export const Technologies: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.technologiesContainer}>
       <div className={styles.header}>
-        <h2>Technologies & Skills</h2>
-        <p>Tools and frameworks I work with</p>
+        <h2>{t('technologiesPage.title')}</h2>
+        <p>{t('technologiesPage.description')}</p>
       </div>
       <div className={styles.grid}>
         {technologiesList.map((tech) => (
           <div key={tech.name} className={styles.card}>
             <i className={tech.iconClass}></i>
             <h3>{tech.name}</h3>
-            <p>{tech.description}</p>
+            <p>{t(tech.descriptionKey)}</p>
           </div>
         ))}
       </div>

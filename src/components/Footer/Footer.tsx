@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
-        <p>&copy; 2023 Vlademir B. M. Júnior. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Vlademir B. M. Júnior. Todos os direitos reservados.</p>
       </div>
     </footer>
   );

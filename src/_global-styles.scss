@@ -1,5 +1,5 @@
 /* Import fonts and icon styles */
-@import '~@fortawesome/fontawesome-free/css/all.css';
+@import '@fortawesome/fontawesome-free/css/all.css';
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 
 /* Reset default styling for all elements */
@@ -12,7 +12,7 @@
 /* Styling for the entire body */
 body {
   /* Create a semi-transparent overlay on the background image */
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./assets/bckgrnd-code.webp);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/src/assets/bckgrnd-code.webp);
   background-size: cover; /* Scale background image to cover the entire area */
   background-position: center; /* Position background image in the center */
   font-family: 'Poppins', sans-serif; /* Set the font for the body text */
@@ -26,4 +26,3 @@ body {
 .technologies {
   z-index: auto; /* Defina "auto" para o z-index ou remova completamente */
 }
-

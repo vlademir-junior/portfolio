@@ -5,7 +5,7 @@ export const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <h1>Vlademir B. M. Júnior</h1>
-      <h2>Computer Science student & FullStack Web Programmer</h2>
+      <h2>Computer Science student & FullStack Web Developer</h2>
     </header>
   );
 };

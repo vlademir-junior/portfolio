@@ -4,27 +4,38 @@ import { useTranslation } from 'react-i18next';
 
 
 interface Project {
-  titleKey: string;
+  title: string;
   descriptionKey: string;
   tags: string[];
+  repositoryUrl: string;
+  liveUrl?: string;
+  iconClass: string;
 }
 
 
 const projectsList: Project[] = [
   {
-    titleKey: 'myProjectsPage.items.project1.title',
-    descriptionKey: 'myProjectsPage.items.project1.description',
-    tags: ['Python', 'Docker', 'Linux'],
+    title: 'News Hub do IBGE',
+    descriptionKey: 'myProjectsPage.items.newsHub',
+    tags: ['React', 'JavaScript', 'IBGE API'],
+    repositoryUrl: 'https://github.com/vlademir-junior/desafio-frontend',
+    liveUrl: 'https://desafio-frontend-omega.vercel.app/',
+    iconClass: 'fas fa-newspaper',
   },
   {
-    titleKey: 'myProjectsPage.items.project2.title',
-    descriptionKey: 'myProjectsPage.items.project2.description',
-    tags: ['React', 'TypeScript', 'Sass'],
+    title: 'ChordGTR',
+    descriptionKey: 'myProjectsPage.items.chordGtr',
+    tags: ['JavaScript', 'HTML', 'CSS'],
+    repositoryUrl: 'https://github.com/vlademir-junior/app-corda-guitarra',
+    liveUrl: 'https://vlademir-junior.github.io/app-corda-guitarra/',
+    iconClass: 'fas fa-guitar',
   },
   {
-    titleKey: 'myProjectsPage.items.project3.title',
-    descriptionKey: 'myProjectsPage.items.project3.description',
-    tags: ['Python', 'Git', 'Linux'],
+    title: 'Pixel Art',
+    descriptionKey: 'myProjectsPage.items.pixelArt',
+    tags: ['JavaScript', 'HTML', 'CSS', 'LocalStorage'],
+    repositoryUrl: 'https://github.com/vlademir-junior/pixels-art',
+    iconClass: 'fas fa-paint-brush',
   },
 ];
 
@@ -41,8 +52,35 @@ export const MyProjects: React.FC = () => {
       </div>
       <div className={styles.grid}>
         {projectsList.map((project) => (
-          <div key={project.titleKey} className={styles.card}>
-            <h3>{t(project.titleKey)}</h3>
+          <div key={project.title} className={styles.card}>
+            <div className={styles.cardHeader}>
+              <i className={project.iconClass} aria-hidden="true"></i>
+              <div className={styles.projectLinks}>
+                <a
+                  className={styles.githubLink}
+                  href={project.repositoryUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`${t('myProjectsPage.repositoryLink')}: ${project.title}`}
+                  title={t('myProjectsPage.repositoryLink')}
+                >
+                  <i className="fab fa-github" aria-hidden="true"></i>
+                </a>
+                {project.liveUrl && (
+                  <a
+                    className={styles.githubLink}
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`${t('myProjectsPage.liveLink')}: ${project.title}`}
+                    title={t('myProjectsPage.liveLink')}
+                  >
+                    <i className="fas fa-external-link-alt" aria-hidden="true"></i>
+                  </a>
+                )}
+              </div>
+            </div>
+            <h3>{project.title}</h3>
             <p>{t(project.descriptionKey)}</p>
             <div className={styles.tags}>
               {project.tags.map((tag, tagIndex) => (

@@ -55,19 +55,12 @@ i18n
 
           myProjectsPage: {
             description: 'Selected projects showcasing my development experience.',
+            repositoryLink: 'View source code',
+            liveLink: 'View live project',
             items: {
-              project1: {
-                title: 'Sample Project 1',
-                description: 'A full-stack backend service demonstrating RESTful API architecture and clean code practices.',
-              },
-              project2: {
-                title: 'Sample Project 2',
-                description: 'An interactive frontend web application built with React and TypeScript.',
-              },
-              project3: {
-                title: 'Sample Project 3',
-                description: 'A distributed data processing pipeline written in Python for high efficiency.',
-              },
+              newsHub: 'A React app for browsing IBGE news and releases, with dedicated sections and a favorites list.',
+              chordGtr: 'A guitar tuning helper that maps a note to its corresponding string, with a dark mode toggle.',
+              pixelArt: 'A 5×5 pixel drawing board with a color palette, random colors, and drawings saved in the browser.',
             },
           },
         },
@@ -120,19 +113,12 @@ i18n
 
           myProjectsPage: {
             description: 'Projetos selecionados que mostram minha experiência em desenvolvimento.',
+            repositoryLink: 'Ver código-fonte',
+            liveLink: 'Ver projeto publicado',
             items: {
-              project1: {
-                title: 'Projeto de Exemplo 1',
-                description: 'Serviço backend full-stack que demonstra uma arquitetura de API RESTful e boas práticas de código.',
-              },
-              project2: {
-                title: 'Projeto de Exemplo 2',
-                description: 'Aplicação frontend interativa desenvolvida com React e TypeScript.',
-              },
-              project3: {
-                title: 'Projeto de Exemplo 3',
-                description: 'Pipeline distribuído de processamento de dados desenvolvido em Python para alta eficiência.',
-              },
+              newsHub: 'Aplicação React para consultar notícias e releases do IBGE, com seções próprias e lista de favoritos.',
+              chordGtr: 'Auxiliar de afinação que relaciona uma nota à corda correspondente do violão, com alternância para modo escuro.',
+              pixelArt: 'Quadro de desenho 5×5 com paleta de cores, cores aleatórias e desenhos salvos no navegador.',
             },
           },
         },
@@ -185,19 +171,12 @@ i18n
 
           myProjectsPage: {
             description: 'Proyectos seleccionados que muestran mi experiencia en desarrollo.',
+            repositoryLink: 'Ver código fuente',
+            liveLink: 'Ver proyecto publicado',
             items: {
-              project1: {
-                title: 'Proyecto de ejemplo 1',
-                description: 'Servicio backend full-stack que demuestra una arquitectura de API RESTful y buenas prácticas de código.',
-              },
-              project2: {
-                title: 'Proyecto de ejemplo 2',
-                description: 'Aplicación frontend interactiva desarrollada con React y TypeScript.',
-              },
-              project3: {
-                title: 'Proyecto de ejemplo 3',
-                description: 'Pipeline distribuido de procesamiento de datos escrito en Python para lograr una alta eficiencia.',
-              },
+              newsHub: 'Aplicación React para consultar noticias y comunicados del IBGE, con secciones propias y una lista de favoritos.',
+              chordGtr: 'Herramienta de afinación que relaciona una nota con su cuerda correspondiente, con modo oscuro.',
+              pixelArt: 'Lienzo de dibujo de 5×5 píxeles con paleta de colores, colores aleatorios y dibujos guardados en el navegador.',
             },
           },
         },
@@ -250,19 +229,12 @@ i18n
 
           myProjectsPage: {
             description: 'Ausgewählte Projekte, die meine Entwicklungserfahrung zeigen.',
+            repositoryLink: 'Quellcode ansehen',
+            liveLink: 'Live-Projekt ansehen',
             items: {
-              project1: {
-                title: 'Beispielprojekt 1',
-                description: 'Full-Stack-Backend-Dienst mit RESTful-API-Architektur und bewährten Clean-Code-Praktiken.',
-              },
-              project2: {
-                title: 'Beispielprojekt 2',
-                description: 'Interaktive Frontend-Webanwendung mit React und TypeScript.',
-              },
-              project3: {
-                title: 'Beispielprojekt 3',
-                description: 'Verteilte Datenverarbeitungspipeline in Python für hohe Effizienz.',
-              },
+              newsHub: 'React-App zum Anzeigen von IBGE-Nachrichten und Veröffentlichungen mit eigenen Bereichen und Merkliste.',
+              chordGtr: 'Stimmhilfe, die einer Note die passende Gitarrensaite zuordnet, mit Dunkelmodus.',
+              pixelArt: '5×5-Pixel-Zeichenfläche mit Farbpalette, Zufallsfarben und im Browser gespeicherten Zeichnungen.',
             },
           },
         },
@@ -315,19 +287,12 @@ i18n
 
           myProjectsPage: {
             description: 'Une sélection de projets qui illustre mon expérience en développement.',
+            repositoryLink: 'Voir le code source',
+            liveLink: 'Voir le projet en ligne',
             items: {
-              project1: {
-                title: 'Projet exemple 1',
-                description: 'Service backend full-stack illustrant une architecture d’API RESTful et de bonnes pratiques de code.',
-              },
-              project2: {
-                title: 'Projet exemple 2',
-                description: 'Application frontend interactive développée avec React et TypeScript.',
-              },
-              project3: {
-                title: 'Projet exemple 3',
-                description: 'Pipeline distribué de traitement de données écrit en Python pour une grande efficacité.',
-              },
+              newsHub: 'Application React pour consulter les actualités et publications de l’IBGE, avec des sections dédiées et une liste de favoris.',
+              chordGtr: 'Outil d’accordage qui associe une note à sa corde correspondante, avec un mode sombre.',
+              pixelArt: 'Grille de dessin de 5×5 pixels avec palette de couleurs, couleurs aléatoires et sauvegarde dans le navigateur.',
             },
           },
         },

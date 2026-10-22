@@ -4,32 +4,60 @@ import styles from './MyProjects.module.scss';
 interface Project {
   title: string;
   description: string;
+  tags: string[];
 }
 
-const placeholderProjects: Project[] = [
+const projectsList: Project[] = [
   {
     title: 'Placeholder Project 1',
-    description: 'This is a placeholder project description.',
+    description: 'A full-stack backend service demonstrating RESTful API architecture and clean code practices.',
+    tags: ['Python', 'Docker', 'Linux'],
   },
   {
     title: 'Placeholder Project 2',
-    description: 'This is another placeholder project description.',
+    description: 'An interactive frontend web application built with React and TypeScript.',
+    tags: ['React', 'TypeScript', 'Sass'],
   },
   {
     title: 'Placeholder Project 3',
-    description: 'This is another placeholder project description.',
+    description: 'A distributed data processing pipeline written in Python for high efficiency.',
+    tags: ['Python', 'Git', 'Linux'],
   },
 ];
 
 export const MyProjects: React.FC = () => {
   return (
-    <div className={styles.projects}>
-      <h2>Projects</h2>
-      <div className={styles.projectCards}>
-        {placeholderProjects.map((project, index) => (
-          <div key={index} className={styles.projectCard}>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
+    <div className={styles.projectsContainer}>
+      <div className={styles.header}>
+        <h2>Featured Projects</h2>
+        <p>Selected work and technical projects</p>
+      </div>
+      <div className={styles.grid}>
+        {projectsList.map((project, index) => (
+          <div key={index} className={styles.card}>
+            <div>
+              <div className={styles.cardHeader}>
+                <i className="fas fa-folder-open"></i>
+                <a
+                  href="https://github.com/vlademir-junior"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={styles.githubLink}
+                  aria-label="GitHub Repository"
+                >
+                  <i className="fab fa-github"></i>
+                </a>
+              </div>
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+            </div>
+            <div className={styles.tags}>
+              {project.tags.map((tag) => (
+                <span key={tag} className={styles.tag}>
+                  {tag}
+                </span>
+              ))}
+            </div>
           </div>
         ))}
       </div>

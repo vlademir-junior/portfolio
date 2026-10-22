@@ -13,7 +13,7 @@ export const Navbar: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.brand}>
           <span className={styles.name}>Vlademir Júnior</span>
-          <span className={styles.role}>Back-End Developer</span>
+          <span className={styles.role}>Computer Science student & FullStack Web Developer</span>
         </div>
 
         <button

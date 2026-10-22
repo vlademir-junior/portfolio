@@ -8,7 +8,7 @@ export const About: React.FC = () => {
       <div className={styles.card}>
         <div className={styles.badge}>
           <span className={styles.dot}></span>
-          Computer Scientist in training
+          Computer Science student & FullStack Web Developer
         </div>
 
         <h1>

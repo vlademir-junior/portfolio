@@ -8,11 +8,11 @@ export const About: React.FC = () => {
       <div className={styles.card}>
         <div className={styles.badge}>
           <span className={styles.dot}></span>
-          Back-End Developer in training
+          Computer Scientist in training
         </div>
 
         <h1>
-          Building robust backend systems & <span>modern solutions.</span>
+          Building robust backend systems & <span>modern layout solutions.</span>
         </h1>
 
         <p>
